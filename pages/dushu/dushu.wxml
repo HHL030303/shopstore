@@ -1,0 +1,33 @@
+
+  <!--垂直滚动，这里必须设置高度-->
+    <view class="jiazai" hidden="{{hidden1}}">
+        <text>正在加载</text>
+          <view class="weui-loading"></view>
+     </view>
+   <view class="refresh-block" style="height: {{refreshHeight}}px;" wx:if="{{refreshing}}">
+        <image animation="{{refreshAnimation}}" src="../../images/refresh.png"></image>
+  </view>
+    <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" 
+        class="list" bindscrolltolower="bindDownLoad" bindscrolltoupper="bindTop" >
+        <view class="item" wx:for="{{list}}" bindtap="tz_artic" data-id="{{item.id}}">
+            <image class="img" src="{{item.pic_url}}"  ></image>
+            <view class="text">
+                <text class="title">{{item.name}}</text>
+                <text class="description">{{item.short_description}}</text>
+            </view>
+        </view>
+         <view class="jiazai" hidden="{{hidden2}}">
+        <text>正在加载</text>
+          <view class="weui-loading"></view>
+     </view>
+     <view class="footer" hidden="{{hidden3}}">
+           {{more}}
+     </view>
+
+    </scroll-view>
+    <view class="body-view">
+        <loading hidden="{{hidden}}" bindchange="loadingChange">
+            加载中...
+        </loading>
+    </view>
+    

@@ -1,0 +1,27 @@
+  <scroll-view  scroll-y="true" style="height: {{scrollHeight}}px;"
+         bindscrolltolower="bindDownLoad"  >
+  <view class="listItem" wx:for="{{arr2}}"  catchtap="openDetail" data-id="{{item.id}}" data-name="{{item.nm}}" data-img="{{item.img}}">
+        <view class="listimg" >
+           <image src="{{item.img}}" class=""></image>
+        </view>
+        <view class="listText">
+            <view class="title">{{item.nm}}</view>
+            <view class="catgroup">
+                   类型：{{item.cat}}
+            </view>
+            <view class="zhuyan">{{item.star}}</view>
+             <view class="daoyan">导演：{{item.dir}}</view> 
+        </view>
+   </view>
+    <view class="footer" hidden="{{hidden3}}">
+           {{more}}
+     </view>
+</scroll-view>
+ <view class="body-view">
+        <loading hidden="{{hidden}}" bindchange="loadingChange">
+            加载中...
+        </loading>
+  </view>
+
+   
+<!--style="height:{{scrollHeight}}px;" -->

@@ -1,0 +1,38 @@
+<view class="foods_wrap" style="padding-bottom:{{num}}rpx">
+<block>
+  <view class="list" wx:for="{{arr}}" data-index="{{index}}" >
+    <view class="list_le">
+      <image src="{{item.img}}"></image>
+    </view>
+    <view class="list_re">
+                          <view class="list_t">
+                              <text class="sjname">{{item.sjname}}</text>
+                              <text class="loc">{{item.loc}}</text>
+                          </view>
+                          <view class="list_c">
+                            <text>￥{{item.desc}}</text>
+                          </view>
+                          <view class="list_b">
+                                <view class="list_b_le">
+                                    <text>{{item.peisong}}</text>
+                                    <text>已售{{item.sale}}</text>
+                                  </view>
+                                  <view class="list_b_re">
+                                <text class="remove" bindtap="remove" hidden="{{item.initvalue<1?true:false}}" data-index="{{index}}" data-price="{{item.desc}}">-</text>
+                                  <input value="{{item.initvalue}}" hidden="{{item.initvalue>=1?false:true}}"  />
+                                  
+                                    <text class="add" bindtap="add" data-index="{{index}}" data-price="{{item.desc}}">+</text>
+                                  </view>
+                          </view>
+                </view>
+      </view>
+      <view id="shopcar" hidden="{{hidden}}">
+
+          <view class="shopcar">
+                  <image src="../../images/shopcar.png" class="carimg"></image>   
+                  <text class="heji">合计:{{total}}</text>
+                    <navigator url="url" class="gotocheck">去结算</navigator>
+          </view>
+      </view>
+</block>
+</view>

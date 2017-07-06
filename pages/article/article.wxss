@@ -1,0 +1,4 @@
+.title{text-align: center;color: #000;font-weight: bold;font-size: 34rpx;line-height: 50rpx;margin-bottom: 50rpx}
+.img{display: block;height: 240rpx;margin: 0 auto;margin-bottom: 50rpx}
+.name{font-size: 32rpx;}
+.le20{padding-left: 50rpx;margin-bottom: 30rpx;padding-right: 50rpx;}

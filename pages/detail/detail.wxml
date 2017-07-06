@@ -1,0 +1,30 @@
+<view class="detail">
+    <view class="detail_title">{{title}}</view>
+    <!--<view class="moviePage">
+        <view class="listimg">
+           <image src="{{img}}"></image>
+         </view>
+    </view>-->
+    <view class="duanping">
+        <view class="dp_title">短评</view>
+        <view class="listwrap" wx:for="{{arr}}">
+          <view class="content">{{item.content}}</view>
+            <view class="list">
+              <view class="imglist list_le">
+                <image src=" {{item.avatarurl}}"></image>
+              </view>
+              <view class="list_re">
+                  <view class="nickname">{{item.nickName}}</view>
+                <view class="time">{{item.time}}</view>
+              </view>
+         </view>
+        </view>
+    </view>
+     <view class="footer" hidden="{{hidden2}}" catchtap="more" >
+          <text>{{more}}</text>
+          <view class="weui-loading" hidden="{{hidden3}}"></view>
+     </view>
+  <!--<view class="footer" catchtap="more">加载更多影评</view>-->
+
+  
+</view>

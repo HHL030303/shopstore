@@ -1,0 +1,19 @@
+<view class="container">
+   
+    <view class="sj_wrap">
+        <view class="sj_wrap_le">
+          <image src="{{img}}"></image>
+        </view>
+        <view class="sj_wrap_re">
+            <view class="name">{{name}}</view>
+            <view class="qisong">起送价:<text class="price">30.00</text></view>
+             <view class="peisong">配送费用：<text  class="price">3.00</text></view>
+          </view>
+    </view>
+    <view class="sj_dz" wx:for="{{location}}">
+      {{item}}
+    </view>
+   <view class="zx_btn">不了解商品？试试和商家视频通话</view>    
+    
+    
+</view>

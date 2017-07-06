@@ -1,0 +1,119 @@
+.list{
+  display: flex;
+  justify-content: space-around;
+  width:100%;
+  border-bottom: 2rpx solid #919191;
+}
+.list:last-child{
+  padding-bottom: 300rpx
+}
+.list_le{
+  width:300rpx;
+}
+.list_le image{
+  width:205rpx;
+  height: 145rpx;
+  margin: 15rpx auto 18rpx 32rpx;
+}
+.list_re{
+  width:450rpx;
+  margin-top: 20rpx
+}
+.list_re .list_t{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25rpx;
+}
+.sjname{
+    font-size: 32rpx;
+    color: #0e0e0e;
+    text-align: left;
+
+}
+.loc{
+  margin-right: 75rpx;
+  font-size: 30rpx;
+  color: #919191
+}
+.list_c{
+  color: #ff6600;
+  font-size: 28rpx;
+  text-align: left
+}
+.list_b{
+  margin-top: 25rpx;
+  display: flex;
+  justify-content: space-between
+
+  
+}
+.list_b text{
+  color: #505050;
+  font-size: 24rpx;
+  text-align: left
+}
+
+.list_b_re{
+  display: flex;
+  margin-right: 75rpx;
+  
+}
+.list_b_re input{
+  width: 50rpx;
+  height: 36rpx;
+ text-align: center;
+  background: white;
+  line-height: 36rpx;
+ 
+}
+.list_b_re text{
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  border:3rpx solid #ff6600;
+  color: #ff6600;
+  text-align: center;
+ 
+  font-size: 24rpx;
+  line-height: 36rpx
+}
+#shopcar{
+ width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 30rpx 0;
+  background: white;
+  z-index: 22
+}
+.shopcar{
+
+  display: flex;
+  justify-content: space-between
+
+}
+.shopcar .carimg{
+  margin-left: 26rpx;
+  margin-right: 40rpx;
+  height: 74rpx;
+  width:74rpx;
+
+}
+.heji{
+  line-height: 66rpx;
+  margin-left: -150rpx;
+ 
+}
+.gotocheck{
+  width: 305rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  background: #ff6600;
+  color: white;
+  text-align: center;
+  font-size: 28rpx;
+  margin-right: 49rpx;
+  border-radius: 7rpx;
+
+}
+
+

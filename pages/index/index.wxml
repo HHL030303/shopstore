@@ -1,0 +1,59 @@
+<!--index.wxml-->
+  <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image"  height="150"/>
+            </swiper-item>
+          </block>
+  </swiper>
+  <view class="section">
+     <!--<view class="title">
+        <text class="line"></text>
+          <text class="title2">{{title}}</text>
+          <text class="line"></text>
+     </view>-->
+
+     <view class="wrap">
+     <block   wx:for="{{arr}}"   wx:for-index="idx" wx:for-item="itemName" >
+        <view  class="list"  wx:if="{{itemName.condition}}" data-url="{{itemName.url}}" catchtap="goto"  data-index="{{itemName.index}}">
+          <view class="listW"  style="background:{{itemName.bgcolor}};">
+            <image class="list_img" src="{{itemName.imglist}}"></image>
+          </view>
+           <text class="text">{{itemName.name}}</text>     
+        </view>
+         <view   wx:else catchtap="showtoatst" class="list" data-index="{{itemName.index}}">
+            <view class="listW" style="background:{{itemName.bgcolor}};">
+                <image class="list_img" src="{{itemName.imglist}}"></image>
+            </view>
+             <text class="text">{{itemName.name}}</text>    
+        </view>
+       </block>
+     </view>
+     <view class="blank"></view>
+     <view class="active" >
+          <view class="title2 {{currclick== item.id?'clickActive':''}}" wx:for="{{title2}}" style="background-image:url({{item.bgimage}})"  catchtap="switchta" data-index="{{index}}" data-id="{{item.id}}">{{item.mess}}</view>
+     </view>
+     <view class="shangjia">
+        <view class="sjlist {{currclick== item.id?'clickActive':''}}" wx:for="{{shangjialist}}" data-index="{{index}}" data-id="{{item.id}}" catchtap="switchta">
+            <view class="sjxq" wx:for="{{item.shangjia}}"  data-image="{{item.sjimg}}" data-id="{{item.id}}" data-name="{{item.sjname}}" catchtap="tz">
+                <view class="sjxq_le" >
+                   <image src="{{item.sjimg}}" ></image>
+                </view>
+               <view class="sjxq_re">
+                          <view class="sjxq_t">
+                              <text class="sjname">{{item.sjname}}</text>
+                              <text class="loc">{{item.loc}}</text>
+                          </view>
+                          <view class="sjxq_c">
+                            <text>{{item.desc}}</text>
+                          </view>
+                          <view class="sjxq_b">
+                            <text>{{item.peisong}}</text>
+                            <text>已售{{item.sale}}</text>
+                          </view>
+                </view>
+            </view>
+        </view>
+     </view>
+  </view>

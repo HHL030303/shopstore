@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="more_list">
+    <block wx:for="{{usermoreInfo}}">
+        <view class="weui_cell">
+            <view class="weui_cell_hd">
+                 <image src="{{item.icon}}"></image>
+            </view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> {{item.text}} </view>
+            </view>
+            <view class="with_arrow">
+              <image src="../../images/Arr_right.png"></image>
+            </view>
+        </view>
+    </block>
+  </view>
+</view>

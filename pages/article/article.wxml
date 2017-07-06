@@ -1,0 +1,19 @@
+<view class="container" style="padding:0" >
+  <view class="detail" >
+      <view class="title">{{title}}</view>
+      <image src="{{img}}" class="img"></image>
+      <view class="name le20" >{{name}}</view>
+      <view class="time le20">{{time}}</view>
+      <view class="short_description le20">{{short_description}}</view>
+      <view class="description le20">{{description}}</view>
+      <view class="precondition le20">{{precondition}}</view>
+      <view class="purpose le20">{{purpose}}</view>
+
+      <view class="classname le20">课时:{{media_total}}小时</view>
+  </view>
+  <view class="body-view">
+        <loading hidden="{{hidden}}" >
+            加载中...
+        </loading>
+    </view>
+</view>

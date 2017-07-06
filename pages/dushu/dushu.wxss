@@ -1,0 +1,88 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+/**/
+
+scroll-view {
+  width: 100%;
+}
+
+.item {
+  width: 90%;
+  margin: 20rpx auto;
+  overflow: hidden;
+  display: flex;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx solid #919191
+  
+}
+
+.item .img {
+  width: 240rpx;
+  margin-right: 20rpx;
+  height: 135rpx
+}
+.item .text{
+  width: 400rpx;
+
+}
+
+
+.title {
+  width:100%;
+  font-size: 30rpx;
+  display: block;
+  color: red;
+  margin-bottom: 20rpx;
+ 
+}
+
+.description {
+  font-size: 26rpx;
+  display: -webkit-box ;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2; 
+
+ 
+}
+.jiazai{
+  text-align: center
+}
+.refresh-block {
+  padding: 15px;
+  text-align: center;
+  height: 200rpx
+}
+.refresh-block image {
+  width: 30px;
+  height: 30px;
+}
+
+
+.footer{
+  text-align: center;
+  font-size: 36rpx;
+  height: 60rpx;
+  line-height:60rpx
+}

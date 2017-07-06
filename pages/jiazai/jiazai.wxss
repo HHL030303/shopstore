@@ -1,0 +1,61 @@
+/**index.wxss**/
+.listItem {
+  width: 100%;
+ height: 180rpx;
+  padding: 10rpx 0;
+  margin: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom:1px solid #d6d6d6;
+  padding-bottom: 20rpx;
+}
+.listItem .listimg{
+  width: 128rpx;
+  height: 180rpx;
+  margin-left: 50rpx
+}
+.listimg image{
+  width: 100%;
+  height: 100%
+
+}
+
+.listText{
+  width: 540rpx;
+  height: 100%;
+
+  text-align: left
+
+}
+.listText view{
+  line-height: 45rpx
+}
+.title{
+   color: #000;
+  font-weight: bold;
+  font-size: 36rpx;
+
+}
+.daoyan{
+  font-size: 34rpx;
+  color: red;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap
+
+
+}
+.zhuyan{
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+.footer{
+  text-align: center;
+  font-size:36rpx;
+  color: #919191;
+  line-height: 50rpx;
+  height: 50rpx
+}

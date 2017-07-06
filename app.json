@@ -1,0 +1,56 @@
+{
+  "pages":[
+
+     "pages/index/index",
+      "pages/map/map",
+      "pages/login/login",
+      "pages/more/more",
+        "pages/info/info",
+        "pages/foods/foods",
+        "pages/test/test",
+        "pages/dushu/dushu",
+        "pages/article/article",
+        "pages/jiazai/jiazai",
+        "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":false
+   
+  },
+ 
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#ff6600",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "商城",
+      "iconPath":"images/home.png",
+      "selectedIconPath":"images/se_home.png"   
+    },{
+      "pagePath":"pages/map/map",
+      "text": "附近",
+        "iconPath": "images/loc.png",
+        "selectedIconPath": "images/se_loc.png"
+    
+    },{
+      "pagePath": "pages/login/login",
+      "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/se_mine.png"
+     
+    },{
+      "pagePath": "pages/more/more",
+      "text": "更多",
+        "iconPath": "images/more.png",
+        "selectedIconPath": "images/se_more.png"
+    
+    }]
+  },
+  "networkTimeout": {
+    "request": 5000,
+    "downloadFile": 10000
+  }
+}
